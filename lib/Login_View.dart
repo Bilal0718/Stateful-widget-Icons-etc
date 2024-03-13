@@ -8,15 +8,52 @@ class LoginView extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.grey,
-        title: Text("Dekh Magar Pyaar Se"),
+        title: const Text("Dekh Magar Pyaar Se"),
       ),
-      body: Container(
-        color: Colors.red,
-        height: 200,
-        width: 200,
-        child: Text("Parhai likhai pe dhiyaan lagao?"),
+      body:(
+        Image.asset('assets/images/Car1.jpg')
       ),
-
-    );
+      // Container(
+      //   padding: EdgeInsets.symmetric(horizontal: 10,vertical: 10),
+      //   child: Column(
+      //     children: [
+      //       Row(
+      //         mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      //         children: [
+      //           Container(
+      //                 color: Colors.pink,
+      //                 height: 100,
+      //                 width: 100,
+      //                 child: const Text("Kiyun nahi horhi parhai!?"),
+      //               ),
+      //           Container(
+      //                 color: Colors.pink,
+      //                 height: 100,
+      //                 width: 100,
+      //                 child: const Text("Kiyun nahi horhi parhai!?"),
+      //               ),
+      //         ],
+      //       ),
+      //       Row(
+      //         mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      //         children: [
+      //           Container(
+      //                 color: Colors.pink,
+      //                 height: 100,
+      //                 width: 100,
+      //                 child: const Text("Kiyun nahi horhi parhai!?"),
+      //               ),
+      //           Container(
+      //                 color: Colors.pink,
+      //                 height: 100,
+      //                 width: 100,
+      //                 child: const Text("Kiyun nahi horhi parhai!?"),
+      //               ),
+      //         ],
+      //       ),
+      //     ],
+      //   ),
+      // ),
+      );
   }
 }
