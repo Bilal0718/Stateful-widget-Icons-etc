@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'countView.dart';
 class LoginView extends StatelessWidget {
   const LoginView({super.key});
 
@@ -8,52 +8,34 @@ class LoginView extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.grey,
-        title: const Text("Dekh Magar Pyaar Se"),
+        title: const Text("Counter"),
       ),
-      body:(
-        Image.asset('assets/images/Car1.jpg')
+      body:Center(
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              Container(
+                    color: Colors.pink,
+                    height: 200,
+                    width: 400,
+                  ),
+              const SizedBox(height: 20),
+              Conterview(),
+              const SizedBox(height: 20),
+              Container(
+                    color: Colors.pink,
+                    height: 200,
+                    width: 400,
+                  ),
+              Container(
+                    color: Colors.pink,
+                    height: 200,
+                    width: 400,
+                  ),
+            ],
+          ),
+        ),
       ),
-      // Container(
-      //   padding: EdgeInsets.symmetric(horizontal: 10,vertical: 10),
-      //   child: Column(
-      //     children: [
-      //       Row(
-      //         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      //         children: [
-      //           Container(
-      //                 color: Colors.pink,
-      //                 height: 100,
-      //                 width: 100,
-      //                 child: const Text("Kiyun nahi horhi parhai!?"),
-      //               ),
-      //           Container(
-      //                 color: Colors.pink,
-      //                 height: 100,
-      //                 width: 100,
-      //                 child: const Text("Kiyun nahi horhi parhai!?"),
-      //               ),
-      //         ],
-      //       ),
-      //       Row(
-      //         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      //         children: [
-      //           Container(
-      //                 color: Colors.pink,
-      //                 height: 100,
-      //                 width: 100,
-      //                 child: const Text("Kiyun nahi horhi parhai!?"),
-      //               ),
-      //           Container(
-      //                 color: Colors.pink,
-      //                 height: 100,
-      //                 width: 100,
-      //                 child: const Text("Kiyun nahi horhi parhai!?"),
-      //               ),
-      //         ],
-      //       ),
-      //     ],
-      //   ),
-      // ),
-      );
+    );
   }
 }
