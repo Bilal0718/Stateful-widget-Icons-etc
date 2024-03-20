@@ -26,7 +26,9 @@ class _ConterviewState extends State<Conterview> {
           },
           color: isFav ? Colors.red: Colors.grey),
         ElevatedButton(onPressed: (){
-          isFav = !isFav;
+          setState(() {
+              isFav = !isFav;
+            });
         }, child: const Text("Tap Me!"))
       ],
     );
